@@ -141,6 +141,8 @@ main{padding:14px 14px 20px;max-width:640px;margin:0 auto}
 .ph .in .w{font-size:11px;color:var(--faint);font-weight:600;letter-spacing:.04em;margin:2px 0 4px}
 .ph .in p{margin:0;font-size:12.5px;color:var(--dim);line-height:1.5}
 a{color:var(--blue);text-decoration:none}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;
+  background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:1px 5px;color:var(--acc)}
 
 /* ---------- detox ---------- */
 .streak{text-align:center;padding:18px 0 6px}
@@ -313,12 +315,12 @@ nav button.on{color:var(--acc)}
 <section class="pane" id="p-study">
   <div class="card tight">
     <div class="row sp">
-      <div><b style="font-size:15px">DataCamp · Data Analyst</b>
+      <div><b style="font-size:15px">DataCamp · AI Engineer</b>
         <div class="mini" id="stmeta"></div></div>
       <button class="btn sm" style="width:auto;padding:10px 15px" onclick="addHr()">+1 hr</button>
     </div>
     <div class="bar" style="margin-top:11px"><i id="sbar" style="width:0%"></i></div>
-    <div class="barlab"><span id="sl">0 hrs</span><span>240 hrs to job-ready</span></div>
+    <div class="barlab"><span id="sl">0 hrs</span><span>~150 hrs of study</span></div>
     <div class="grid3" style="margin-top:10px">
       <div class="stat"><b id="q1">0</b><i>hrs done</i></div>
       <div class="stat"><b id="q2">0</b><i>day streak</i></div>
@@ -327,22 +329,31 @@ nav button.on{color:var(--acc)}
   </div>
 
   <div class="card">
-    <div class="ttl">The route · 34 weeks</div>
+    <div class="ttl">The route · 30 weeks · barista → AI engineer</div>
     <div id="phases"></div>
   </div>
 
   <div class="card">
-    <div class="ttl">Why this order</div>
-    <div class="sub">SQL first because it's the filter on nearly every analyst job ad and the thing you'll be tested on. Python second because it's what separates you from the other career-changers who only did a BI tool. Power BI third because it's what you'll actually be doing on day one of the job, and it's the fastest thing to learn once you can already think in data.<br><br>
-    <b style="color:var(--tx)">The projects are the point.</b> Nobody hires a certificate. They hire someone who can show three pieces of work with a question, a dataset, and an answer. Put them on GitHub with a plain-English write-up. A barista who built three real analyses is a far better story than a graduate who didn't — lean on it, don't hide it.</div>
+    <div class="ttl">Why AI engineering, and why this order</div>
+    <div class="sub">Data science is gated behind postgraduate degrees and it's the most crowded target in tech. <b style="color:var(--tx)">AI engineering isn't the same job.</b> It rewards people who can build and deploy things, and that is exactly the thing almost nobody coming off a course can do. You already ship — brewmaster-app.com is live with analytics on it. That's the whole gap, and you're already on the right side of it.<br><br>
+    <b style="color:var(--tx)">The reorder:</b> most roadmaps make you do 40 hours of scikit-learn and 18 hours of PyTorch before you touch an LLM. But you'll rarely open PyTorch in this job. Doing AI engineering at week 4 instead of week 20 gets your flagship app live four months earlier — and the live app is what makes applications get answered. Core ML is backfill; it matters, but it isn't the gate.</div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">The thing that gets you hired</div>
+    <div class="sub"><b style="color:var(--acc)">Evals.</b> Anyone can follow a LangChain tutorial and produce a chatbot. Very few can answer "how do you know it's any good?" — and that question is reportedly the strongest single signal of real LLM experience in interviews. Expect to be handed a corpus and asked how you'd chunk it, what embeddings you'd pick, whether you'd rerank, and how you'd measure the result.<br><br>
+    The second underrated one is <b style="color:var(--tx)">cost</b>. Most engineers can build a working RAG pipeline; almost none can halve the production bill with quality flat. If you can show a token-spend graph with a caching change in the middle of it, that's a story nobody else in the pile is telling.<br><br>
+    <b style="color:var(--tx)">One app, not four repos.</b> Let brewmaster grow: it gains retrieval, then evals, then a model, then monitoring. Depth reads far better than four disconnected tutorials, and "I ran this in production and here's what broke" is the sentence that gets you the offer.</div>
   </div>
 
   <div class="card">
     <div class="ttl">Your 60 minutes</div>
-    <div class="rule"><em>·</em><div><b>06:30–07:30, before the cafe.</b> Not the evening. After a nine-hour shift and the gym you will not open DataCamp, and you'll feel bad about it, and then you'll stop.</div></div>
-    <div class="rule"><em>·</em><div>Phone in the other room, laptop already open from the night before.</div></div>
-    <div class="rule"><em>·</em><div>End every session by writing one line: what you learned, what confused you. That line is your revision.</div></div>
-    <div class="rule"><em>·</em><div>Missed a day? One day is nothing. Two in a row is the start of a pattern — do 15 minutes rather than zero.</div></div>
+    <div class="rule"><em>·</em><div><b>06:30–07:30, before work.</b> Not the evening. The roadmap you were given assumes weekday evenings and two rest nights — you work seven days across two jobs and train four of them. That schedule doesn't exist. This one does.</div></div>
+    <div class="rule"><em>·</em><div>Phone in the other room, laptop left open from the night before. One tab.</div></div>
+    <div class="rule"><em>·</em><div><b>End every session by committing something,</b> however small. Visible progress is what stops you needing the phone to feel productive.</div></div>
+    <div class="rule"><em>·</em><div>Write one line before you close the laptop: what you learned, what confused you. That line is your revision.</div></div>
+    <div class="rule"><em>·</em><div>Missed a day is nothing. Two in a row is the start of a pattern — do 15 minutes rather than zero.</div></div>
+    <div class="rule"><em>·</em><div><b>Stage 4 will run over.</b> Core ML is where everyone underestimates. Adjust the timeline, never the order.</div></div>
   </div>
 </section>
 
@@ -424,7 +435,7 @@ nav button.on{color:var(--acc)}
 const START = new Date(2026,7,10);      // Mon 10 Aug 2026
 const W0 = 89.0, GOAL = 77.0;
 const KCAL = 2200, PROT = 150, RATE = 0.545;   // kg/week
-const STUDY_GOAL = 240;
+const STUDY_GOAL = 150;
 
 /* ---------- storage ---------- */
 const KEY='reset_jeeva_v1';
@@ -623,24 +634,30 @@ const tread=w=>TREAD.find(t=>w>=t[0]&&w<=t[1])||TREAD[TREAD.length-1];
 
 /* ======================= STUDY ======================= */
 const PHASES=[
- [1,6,  'SQL foundations','Associate Data Analyst in SQL',
-  'The single highest-value thing you can learn. Roughly 39 hours of track. Joins, aggregation, subqueries, window functions. Nearly every analyst job advert asks for this and nearly every interview tests it.',
-  'https://www.datacamp.com/tracks/associate-data-analyst-in-sql'],
- [7,8,  'Project 1 · a real question','SQL + a public dataset',
-  'Pick something you actually care about — coffee prices, football, transport. Ask one clear question, answer it in SQL, write it up in plain English on GitHub. Two weeks, no new courses.',''],
- [9,17, 'Python for analysis','Data Analyst with Python',
-  'pandas, NumPy, matplotlib, seaborn. About 54 hours. This is what separates you from every other career-changer who only did a dashboard tool.',
-  'https://www.datacamp.com/tracks/data-analyst-with-python'],
- [18,19,'Project 2 · clean something messy','Python end-to-end',
-  'Take a genuinely dirty dataset, clean it, explore it, chart it, and write what you found. Employers care far more about this than about your certificate.',''],
- [20,27,'Power BI','Data Analyst in Power BI',
-  'Built with Microsoft, around 48 hours, and it lines up with the PL-300 certification. This is the tool you\'ll be using on day one of the job.',
-  'https://www.datacamp.com/tracks/data-analyst-in-power-bi'],
- [28,29,'Project 3 · a dashboard','Power BI',
-  'One dashboard that answers a business question, not fifteen charts. Screenshot it, host the file, write the story underneath.',''],
- [30,34,'Certification & applying','Data Analyst Associate + job hunt',
-  'The DA101 timed exam plus the practical — 30 days from the moment you register, so don\'t register until you\'re ready. Then: CV rewritten around the three projects, LinkedIn done properly, and five applications a week. Every week.',
-  'https://www.datacamp.com/certification/data-analyst']
+ [1,2,  'Lock in the foundations','pandas · SQL · statistics',
+  '~15 hrs. You already have these — this is consolidation, not learning. If joins and pandas already feel automatic, compress it to one week and move on.<br><br><b>Ship:</b> one notebook on real brewmaster-app data — load it, clean it, answer three questions with a chart each. Commit to <code>cafe-analytics</code>.',
+  'https://www.datacamp.com/courses/data-manipulation-with-pandas'],
+ [3,3,  'Get AI-literate','AI Fundamentals · Generative AI Concepts',
+  '~8 hrs. Enough vocabulary to explain ML vs deep learning vs LLM vs generative AI without hand-waving.<br><br><b>Ship:</b> a short "What is an LLM?" page on brewmaster-app.com, in your own words. Teaching it is how you find out whether you actually understood it.',
+  'https://www.datacamp.com/tracks/ai-fundamentals'],
+ [4,8,  'AI engineering — moved to the front','Associate AI Engineer for Developers',
+  '~35 hrs. <b>This is the reorder that matters.</b> OpenAI API, Hugging Face, LangChain, embeddings, vector search, RAG, agents. It\'s the job you\'re actually applying for, and it\'s where being able to deploy is an unfair advantage over everyone else on the course.<br><br><b>Ship (flagship):</b> Barista AI — RAG over your own menu and recipe docs, in React, deployed the way you already deploy. Live by about week 8.',
+  'https://www.datacamp.com/tracks/associate-ai-engineer-for-developers'],
+ [9,11, 'Evals, cost and failure modes','Not on DataCamp — you build this',
+  '<b>The single biggest signal of real LLM experience</b>, and it\'s missing from almost every roadmap. Interviewers hand you a corpus and watch how you\'d chunk, embed and rerank — and how you\'d measure whether any of it worked.<br><br>Learn <code>ragas</code> for retrieval groundedness, <code>promptfoo</code> or <code>DeepEval</code> for prompt regression tests, LangSmith for tracing. Then log your token spend, add caching, and get a real before/after number.<br><br><b>Ship:</b> an eval suite on Barista AI, and a README documenting where retrieval failed and how you caught it.',
+  'https://docs.ragas.io/'],
+ [12,17,'Backfill core ML','Associate Data Scientist in Python',
+  '~40 hrs, the biggest single block, and the one everyone underestimates — budget for it running over. It\'s backfill now rather than a blocker, because you already have an app live.<br><br><b>Ship:</b> a daily-sales or repeat-customer model folded into brewmaster, not a separate repo.<br><br><b style="color:var(--warn)">Start applying at week 16.</b> Not because you\'ll get those jobs — because job ads are the only honest curriculum, and you need to see what your market actually asks for.',
+  'https://www.datacamp.com/tracks/associate-data-scientist-in-python'],
+ [18,20,'Deep learning — literacy only','Introduction to Deep Learning with PyTorch',
+  '~18 hrs. Be honest about why you\'re doing it: you will rarely touch PyTorch in an AI engineering job. This is so you can answer the question, not because the work needs it. <b>If time gets tight, this is the stage to cut.</b><br><br><b>Ship:</b> one small classifier you can explain end to end in an interview.',
+  'https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch'],
+ [21,23,'Run it like production','MLOps Concepts · Docker · MLflow',
+  '~15 hrs — selected courses from the Machine Learning Engineer track. Containers, experiment tracking, monitoring. Enough to speak the language in an interview.<br><br><b>Ship:</b> monitoring and a clear architecture README on brewmaster. A well-documented deploy is itself a hiring signal.',
+  'https://www.datacamp.com/tracks/machine-learning-engineer'],
+ [24,30,'Prove it and get hired','AI Engineer for Developers — Associate cert',
+  'Timed exam plus a practical project, included in your subscription. You get 30 days from the moment you register, so don\'t register until you\'re ready.<br><br>Then: badge on LinkedIn, three or four repos pinned on GitHub (JeJo8), one short post per shipped project, and five applications a week. Every week, not when you feel like it.',
+  'https://www.datacamp.com/certification']
 ];
 
 /* ======================= RENDER ======================= */
