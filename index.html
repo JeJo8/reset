@@ -320,7 +320,7 @@ nav button.on{color:var(--acc)}
       <button class="btn sm" style="width:auto;padding:10px 15px" onclick="addHr()">+1 hr</button>
     </div>
     <div class="bar" style="margin-top:11px"><i id="sbar" style="width:0%"></i></div>
-    <div class="barlab"><span id="sl">0 hrs</span><span>~150 hrs of study</span></div>
+    <div class="barlab"><span id="sl">0 hrs</span><span>~180 hrs of study</span></div>
     <div class="grid3" style="margin-top:10px">
       <div class="stat"><b id="q1">0</b><i>hrs done</i></div>
       <div class="stat"><b id="q2">0</b><i>day streak</i></div>
@@ -329,14 +329,24 @@ nav button.on{color:var(--acc)}
   </div>
 
   <div class="card">
-    <div class="ttl">The route · 30 weeks · barista → AI engineer</div>
+    <div class="ttl">The route · 35 weeks · from the basics up</div>
     <div id="phases"></div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">Skip test · do this before week 1</div>
+    <div class="sub" style="margin-bottom:11px">You have an MSc and a bootcamp behind you, so some of the foundations will be revision and some won't. <b style="color:var(--tx)">Don't guess — check.</b> Open a blank file and actually do these, no googling, no AI. Whatever you can't do in a couple of minutes is what your foundation weeks are for.</div>
+    <div class="rule"><em>Py</em><div>Write a function with a default argument and <code>**kwargs</code>. Write a list comprehension with a condition in it. Write a class with <code>__init__</code> and one method. Catch a specific exception, not a bare <code>except</code>. Create a virtualenv and freeze a <code>requirements.txt</code>.</div></div>
+    <div class="rule"><em>SQL</em><div>Explain when a <code>LEFT JOIN</code> gives you rows an <code>INNER JOIN</code> doesn't, and why a <code>WHERE</code> on the right-hand table silently turns one into the other. Write a <code>GROUP BY</code> with a <code>HAVING</code>. Write <code>ROW_NUMBER() OVER (PARTITION BY ...)</code>. Rewrite a subquery as a CTE.</div></div>
+    <div class="rule"><em>pd</em><div><code>groupby().agg()</code> with two different functions. <code>merge</code> two frames and explain the <code>how</code> argument. Fill missing values three different ways and say why you'd pick each. Reshape wide to long.</div></div>
+    <div class="rule"><em>Stat</em><div>Say in one sentence what a p-value actually means. Explain when the median beats the mean. Explain overfitting to someone non-technical. Explain why a correlation of 0.9 might mean nothing.</div></div>
+    <div class="mini" style="margin-top:11px"><b>Scoring:</b> all four blocks clean → skip to week 8 and start AI literacy. One shaky block → do that block's weeks only. Two or more → do all of weeks 1–7 properly. There's no prize for skipping, and everything from stage 2 onwards silently assumes this.</div>
   </div>
 
   <div class="card">
     <div class="ttl">Why AI engineering, and why this order</div>
     <div class="sub">Data science is gated behind postgraduate degrees and it's the most crowded target in tech. <b style="color:var(--tx)">AI engineering isn't the same job.</b> It rewards people who can build and deploy things, and that is exactly the thing almost nobody coming off a course can do. You already ship — brewmaster-app.com is live with analytics on it. That's the whole gap, and you're already on the right side of it.<br><br>
-    <b style="color:var(--tx)">The reorder:</b> most roadmaps make you do 40 hours of scikit-learn and 18 hours of PyTorch before you touch an LLM. But you'll rarely open PyTorch in this job. Doing AI engineering at week 4 instead of week 20 gets your flagship app live four months earlier — and the live app is what makes applications get answered. Core ML is backfill; it matters, but it isn't the gate.</div>
+    <b style="color:var(--tx)">The reorder:</b> most roadmaps make you do 40 hours of scikit-learn and 18 hours of PyTorch before you touch an LLM. But you'll rarely open PyTorch in this job. Doing AI engineering at week 4 instead of week 20 gets your flagship app live several months earlier — and the live app is what makes applications get answered. Core ML is backfill; it matters, but it isn't the gate.</div>
   </div>
 
   <div class="card">
@@ -435,7 +445,7 @@ nav button.on{color:var(--acc)}
 const START = new Date(2026,7,10);      // Mon 10 Aug 2026
 const W0 = 89.0, GOAL = 77.0;
 const KCAL = 2200, PROT = 150, RATE = 0.545;   // kg/week
-const STUDY_GOAL = 150;
+const STUDY_GOAL = 180;
 
 /* ---------- storage ---------- */
 const KEY='reset_jeeva_v1';
@@ -634,28 +644,34 @@ const tread=w=>TREAD.find(t=>w>=t[0]&&w<=t[1])||TREAD[TREAD.length-1];
 
 /* ======================= STUDY ======================= */
 const PHASES=[
- [1,2,  'Lock in the foundations','pandas · SQL · statistics',
-  '~15 hrs. You already have these — this is consolidation, not learning. If joins and pandas already feel automatic, compress it to one week and move on.<br><br><b>Ship:</b> one notebook on real brewmaster-app data — load it, clean it, answer three questions with a chart each. Commit to <code>cafe-analytics</code>.',
+ [1,3,  'Python from the ground up','Python Programming Fundamentals → Associate Python Developer',
+  '~20 hrs. Variables, types, control flow, functions, comprehensions, error handling, then classes and modules. <b>Do the OOP and error-handling parts properly</b> — AI engineering is a software job, and this is where most course-only people are exposed.<br><br>Take the <b>skip test</b> below first. If Python is genuinely solid, do the Associate Python Developer track instead and be done in a week.<br><br><b>Ship:</b> one small script with functions, a class and a <code>try/except</code>, in a repo with a <code>requirements.txt</code> that someone else could actually run.',
+  'https://www.datacamp.com/tracks/python-programming-fundamentals'],
+ [4,5,  'SQL from the ground up','Introduction to SQL → Intermediate SQL → Joining Data',
+  '~15 hrs. SELECT and WHERE, then GROUP BY and HAVING, then the part that actually matters: <b>joins</b>. Inner vs left, and why rows silently disappear. Finish with subqueries, CTEs and one window function.<br><br>You will be tested on this in interviews for years. It is worth over-learning.<br><br><b>Ship:</b> five queries against your own brewmaster data, saved in the repo with a line of comment each saying what question they answer.',
+  'https://www.datacamp.com/courses/introduction-to-sql'],
+ [6,7,  'pandas and enough statistics','Data Manipulation with pandas · Intro to Statistics in Python',
+  '~15 hrs. <code>groupby</code>, <code>merge</code>, missing values, reshaping. Then the statistics you need to not embarrass yourself: distributions, mean vs median on skewed data, correlation, sampling, and what a p-value does and doesn\'t say.<br><br>You don\'t need heavy maths for AI engineering — you need enough to know when a number is lying to you.<br><br><b>Ship:</b> one notebook on real brewmaster-app or GoatCounter data — load, clean, three questions, three charts. Commit to <code>cafe-analytics</code>.',
   'https://www.datacamp.com/courses/data-manipulation-with-pandas'],
- [3,3,  'Get AI-literate','AI Fundamentals · Generative AI Concepts',
+ [8,8,  'Get AI-literate','AI Fundamentals · Generative AI Concepts',
   '~8 hrs. Enough vocabulary to explain ML vs deep learning vs LLM vs generative AI without hand-waving.<br><br><b>Ship:</b> a short "What is an LLM?" page on brewmaster-app.com, in your own words. Teaching it is how you find out whether you actually understood it.',
   'https://www.datacamp.com/tracks/ai-fundamentals'],
- [4,8,  'AI engineering — moved to the front','Associate AI Engineer for Developers',
-  '~35 hrs. <b>This is the reorder that matters.</b> OpenAI API, Hugging Face, LangChain, embeddings, vector search, RAG, agents. It\'s the job you\'re actually applying for, and it\'s where being able to deploy is an unfair advantage over everyone else on the course.<br><br><b>Ship (flagship):</b> Barista AI — RAG over your own menu and recipe docs, in React, deployed the way you already deploy. Live by about week 8.',
+ [9,13, 'AI engineering — moved to the front','Associate AI Engineer for Developers',
+  '~35 hrs. <b>This is the reorder that matters.</b> OpenAI API, Hugging Face, LangChain, embeddings, vector search, RAG, agents. It\'s the job you\'re actually applying for, and it\'s where being able to deploy is an unfair advantage over everyone else on the course.<br><br><b>Ship (flagship):</b> Barista AI — RAG over your own menu and recipe docs, in React, deployed the way you already deploy. Live by about week 13.',
   'https://www.datacamp.com/tracks/associate-ai-engineer-for-developers'],
- [9,11, 'Evals, cost and failure modes','Not on DataCamp — you build this',
+ [14,16,'Evals, cost and failure modes','Not on DataCamp — you build this',
   '<b>The single biggest signal of real LLM experience</b>, and it\'s missing from almost every roadmap. Interviewers hand you a corpus and watch how you\'d chunk, embed and rerank — and how you\'d measure whether any of it worked.<br><br>Learn <code>ragas</code> for retrieval groundedness, <code>promptfoo</code> or <code>DeepEval</code> for prompt regression tests, LangSmith for tracing. Then log your token spend, add caching, and get a real before/after number.<br><br><b>Ship:</b> an eval suite on Barista AI, and a README documenting where retrieval failed and how you caught it.',
   'https://docs.ragas.io/'],
- [12,17,'Backfill core ML','Associate Data Scientist in Python',
-  '~40 hrs, the biggest single block, and the one everyone underestimates — budget for it running over. It\'s backfill now rather than a blocker, because you already have an app live.<br><br><b>Ship:</b> a daily-sales or repeat-customer model folded into brewmaster, not a separate repo.<br><br><b style="color:var(--warn)">Start applying at week 16.</b> Not because you\'ll get those jobs — because job ads are the only honest curriculum, and you need to see what your market actually asks for.',
+ [17,22,'Backfill core ML','Associate Data Scientist in Python',
+  '~40 hrs, the biggest single block, and the one everyone underestimates — budget for it running over. It\'s backfill now rather than a blocker, because you already have an app live.<br><br><b>Ship:</b> a daily-sales or repeat-customer model folded into brewmaster, not a separate repo.<br><br><b style="color:var(--warn)">Start applying at week 17.</b> Not because you\'ll get those jobs — because job ads are the only honest curriculum, and you need to see what your market actually asks for.',
   'https://www.datacamp.com/tracks/associate-data-scientist-in-python'],
- [18,20,'Deep learning — literacy only','Introduction to Deep Learning with PyTorch',
+ [23,25,'Deep learning — literacy only','Introduction to Deep Learning with PyTorch',
   '~18 hrs. Be honest about why you\'re doing it: you will rarely touch PyTorch in an AI engineering job. This is so you can answer the question, not because the work needs it. <b>If time gets tight, this is the stage to cut.</b><br><br><b>Ship:</b> one small classifier you can explain end to end in an interview.',
   'https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch'],
- [21,23,'Run it like production','MLOps Concepts · Docker · MLflow',
+ [26,28,'Run it like production','MLOps Concepts · Docker · MLflow',
   '~15 hrs — selected courses from the Machine Learning Engineer track. Containers, experiment tracking, monitoring. Enough to speak the language in an interview.<br><br><b>Ship:</b> monitoring and a clear architecture README on brewmaster. A well-documented deploy is itself a hiring signal.',
   'https://www.datacamp.com/tracks/machine-learning-engineer'],
- [24,30,'Prove it and get hired','AI Engineer for Developers — Associate cert',
+ [29,35,'Prove it and get hired','AI Engineer for Developers — Associate cert',
   'Timed exam plus a practical project, included in your subscription. You get 30 days from the moment you register, so don\'t register until you\'re ready.<br><br>Then: badge on LinkedIn, three or four repos pinned on GitHub (JeJo8), one short post per shipped project, and five applications a week. Every week, not when you feel like it.',
   'https://www.datacamp.com/certification']
 ];
