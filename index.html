@@ -287,6 +287,24 @@ nav button.on{color:var(--acc)}
   </div>
 
   <div class="card">
+    <div class="ttl">Bigger arms · what actually works</div>
+    <div class="sub" style="margin-bottom:11px">Direct arm work now lands on <b style="color:var(--tx)">four of your five days</b> — B, C, D and E. Arms are small and recover fast, so that frequency is right where a chest or a back would be overtrained. But the order of what matters isn't what most people assume.</div>
+    <div class="rule"><em>1</em><div><b>Losing the fat will do more than any curl.</b> You already have arm muscle — it's under a layer. Going 89 → 77 kg will change how your arms look far more than the training does, and the forearm veins people notice are a body-fat thing before they're a muscle thing. The two goals aren't in competition; the diet <i>is</i> the arm plan.</div></div>
+    <div class="rule"><em>2</em><div><b>Triceps are about two thirds of your upper arm.</b> Everyone trains biceps and wonders why their arms look the same. You now have two triceps movements on push day — one with elbows down (pushdown) and one overhead (extension) — because the <b>long head</b> is the biggest part and it only stretches properly with your arm above your head.</div></div>
+    <div class="rule"><em>3</em><div><b>Hammer and reverse curls beat normal curls</b> for looking bigger. The brachialis sits underneath the biceps and physically pushes it up; the brachioradialis is the thick muscle on the thumb side of the forearm. Together they're what makes an arm look solid in a T-shirt. The standard palms-up curl trains neither of them well.</div></div>
+    <div class="rule"><em>4</em><div><b>Forearms need to be trained in both directions.</b> Almost everyone does the underside and nothing on top — which is why some forearms look flat from above. That's what the reverse curls and reverse wrist curls are for.</div></div>
+    <div class="rule"><em>5</em><div><b>Your rows and pulldowns are already building biceps</b> — heavily. That's why the curls come after them and not before, and why three curl variations is plenty rather than six.</div></div>
+    <div class="rule"><em>6</em><div><b>Thicken the grip for free.</b> Wrap a gym towel around a dumbbell handle or cable attachment. A thicker bar forces the forearm to work far harder for the same weight, costs nothing, and takes five seconds to set up.</div></div>
+    <div class="mini" style="margin-top:11px"><b>Honest expectation:</b> while you're eating 600 calories under maintenance, your arm <i>circumference</i> may barely move for months — you'll be adding a little muscle and losing fat around it at the same time. The tape lies here. Judge it on how they look at 82 kg, and on whether the numbers in your logging boxes are going up. If the weights climb while your bodyweight falls, it's working, whatever the tape says.</div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">One barista advantage</div>
+    <div class="sub">You already train your forearms for hours a day and it doesn't feel like training. Tamping, twisting the portafilter in and out a few hundred times a shift, holding milk jugs, gripping a steam wand — that's high-volume, low-load grip work, seven days a week. It's why bar staff and baristas often have better forearms than people who lift.<br><br>
+    Two consequences. First, you're starting from a better base than you think. Second, <b style="color:var(--tx)">don't be surprised if your forearms get sore or achy</b> once you add wrist curls on top of a full shift — if they do, drop the wrist work to twice a week and keep the hammer curls, which give you most of the benefit anyway.</div>
+  </div>
+
+  <div class="card">
     <div class="ttl">Push-ups &amp; planks · the progressions</div>
     <div class="sub" style="margin-bottom:11px">These two are in the plan twice a week and they're the only movements where <b style="color:var(--tx)">your bodyweight is the load</b> — which means they get easier as you lose weight, and that's enormously motivating. Track the numbers.</div>
     <div class="rule"><em>1</em><div><b>Push-ups: don't start on the floor.</b> At 89 kg a floor push-up is about 65 kg through your chest and shoulders. Start with your hands on the Smith machine bar at hip height. Straight line head to heels, chest to the bar, no sagging hips.</div></div>
@@ -574,8 +592,8 @@ const SHOP='<b style="color:var(--tx)">Chilled:</b> 3½ dozen eggs · cooked chi
 /* ======================= GYM ======================= */
 /* n=name, s=sets, r=rep range, rest, tempo, cue, alt=if the machine is taken, inc=weight jump */
 const GYM={
- A:{t:'Session A · Legs & core',d:'Mondays',time:'45 min lifting + 30 min treadmill',
-  why:'Legs are the biggest muscles you own, so they burn the most and they hold the most muscle. Keeping this session is what stops your 12 kg being half muscle.',
+ A:{t:'Session A · Legs, core & grip',d:'Mondays',time:'45 min lifting + 30 min treadmill',
+  why:'Legs are the biggest muscles you own — they burn the most and hold the most muscle, which is what stops your 12 kg being half muscle. Finished with grip and wrist work, because forearms recover fast and can be trained on a leg day for free.',
   warm:['5 min easy walk on the treadmill, incline 0 — this is NOT your 30 minutes',
         '15 bodyweight squats, slow and controlled',
         '10 hip hinges holding a broomstick or empty bar',
@@ -596,13 +614,16 @@ const GYM={
   {n:'Calf raise (any machine)',an:'calf',s:3,r:'15–20',rest:'60 sec',tempo:'2 sec up · 3 sec down · pause',inc:'+5 kg',
    cue:'Full stretch at the bottom, full squeeze at the top, pause for a beat at each end. Running four times a week loads your calves and Achilles hard — this is the insurance policy.',
    alt:'Standing calf raise off a step holding dumbbells'},
-  {n:'Plank',an:'plank',s:3,r:'30–45 sec',rest:'45 sec',tempo:'hold',inc:'+5 sec',
-   cue:'Elbows under shoulders, squeeze the glutes, tuck the ribs down. Hips must not sag. If it\'s easy at 45 seconds, don\'t go longer — lift one foot off the floor instead.',
-   alt:'Dead bug, 10 slow reps each side'}],
-  cool:['Standing quad stretch, 30 sec each leg','Seated hamstring stretch, 30 sec each leg','Calf stretch against a wall, 30 sec each']},
+  {n:'Farmer\'s carry',an:'carry',s:3,r:'40 m',rest:'90 sec',tempo:'walk tall',inc:'+2 kg per hand',
+   cue:'Heaviest dumbbells you can hold, walk the length of the gym and back. Shoulders back, don\'t lean, don\'t rush. Nothing builds forearms and grip faster than simply holding something heavy for a long time — and grip strength is what will eventually limit your rows and pulldowns, so it pays twice.',
+   alt:'Suitcase carry with one dumbbell, swap sides halfway'},
+  {n:'Wrist curl + reverse wrist curl',an:'wrist',s:3,r:'15–20 each way',rest:'60 sec',tempo:'slow, full range',inc:'+2 kg',
+   cue:'Sit, rest your forearms flat on your thighs, hands hanging off the knees. Palms UP: curl the weight with your wrist only, let it roll to your fingertips at the bottom for the full stretch. Then flip palms DOWN and do the same. Straight into one another, no rest between. This is the direct forearm work almost nobody does — and it\'s what thickens the top of the forearm rather than just the underside.',
+   alt:'Barbell wrist curls behind your back, or a wrist roller'}],
+  cool:['Standing quad stretch, 30 sec each leg','Seated hamstring stretch, 30 sec each leg','Wrist flexor + extensor stretch, 20 sec each']},
 
- B:{t:'Session B · Push + push-ups',d:'Tuesdays',time:'40 min lifting + 30 min treadmill',
-  why:'Everything that pushes — chest, front and side shoulders, triceps — finished with push-ups to failure so you have a bodyweight number that goes up over the months.',
+ B:{t:'Session B · Push & triceps',d:'Tuesdays',time:'45 min lifting + 30 min treadmill',
+  why:'Everything that pushes, weighted towards the triceps — they make up about two thirds of your upper arm, so if you want bigger arms this session matters more than curling does. Two triceps movements: one with elbows down, one overhead, because the long head only gets properly loaded with your arm above your head.',
   warm:['5 min easy walk on the treadmill',
         '15 arm circles forwards, 15 backwards',
         '15 band pull-aparts (or slow arm swings across your chest)',
@@ -623,13 +644,16 @@ const GYM={
   {n:'Rope triceps pushdown',an:'pushdown',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec down · 2 sec up',inc:'+2.5 kg',
    cue:'Elbows pinned to your sides and they stay there. Push down and spread the rope apart at the bottom, squeeze for a beat. Only your forearms move.',
    alt:'Overhead dumbbell triceps extension, or bench dips'},
-  {n:'Push-ups · to 2 short of failure',an:'pushup',s:3,r:'max −2',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'lower the bar one notch',
+  {n:'Overhead dumbbell triceps extension',an:'tri_oh',s:3,r:'10–12',rest:'75 sec',tempo:'3 sec down · 1 sec up',inc:'+2 kg',
+   cue:'One dumbbell in both hands, straight overhead, lower it behind your head. <b>Elbows point forwards and do not flare out.</b> The long head of the triceps is the biggest part of the muscle and it only gets fully stretched when your arm is overhead — pushdowns alone will never reach it. This is the single most underrated exercise for arm size.',
+   alt:'Cable overhead rope extension, or a skull crusher on a bench'},
+  {n:'Close-grip push-ups · to 2 short of failure',an:'pushup',s:3,r:'max −2',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'lower the bar one notch',
    cue:'At 89 kg do NOT start on the floor — start with hands on the Smith machine bar set at hip height, or on a bench. Body in one straight line, hips neither sagging nor stuck up, chest to the bar. As you get stronger, lower the bar a notch. Floor push-ups will come somewhere around 82 kg, and they will feel enormous when they do. Stop each set 2 reps before you\'d fail.',
    alt:'Machine assisted dip, or an incline push-up on a bench'}],
   cool:['Doorway chest stretch, 30 sec each side','Cross-body shoulder stretch, 30 sec each','Overhead triceps stretch, 30 sec each']},
 
- C:{t:'Session C · Core, push-ups & conditioning',d:'Wednesdays',time:'25 min work + 30 min cardio · the light day',
-  why:'Deliberately the easy one. You work seven days across two jobs and you\'re now training five — something has to be light or your body picks the rest day for you, usually via an injury. No heavy loading, all core and bodyweight. Turn up, do it, go home.',
+ C:{t:'Session C · Core & arm pump',d:'Wednesdays',time:'30 min work + 30 min cardio · the light day',
+  why:'Still the light day — nothing heavy, nothing that wrecks you for Thursday. Core work plus a high-rep arm circuit at the end. Arms are small and recover fast, so pumping them on your easy day is free volume that costs you nothing in recovery.',
   warm:['5 min easy walk on the treadmill',
         '15 bodyweight squats + 15 arm circles',
         '10 dead bugs, slow'],
@@ -651,11 +675,20 @@ const GYM={
    alt:'Hanging knee raise, or lying leg raise'},
   {n:'Cable crunch',an:'crunch',s:3,r:'12–15',rest:'60 sec',tempo:'2 sec down · 2 sec up',inc:'+5 kg',
    cue:'The only loaded core movement in the session. Kneel facing the cable, rope behind the head, curl your ribs towards your hips. Abs grow from weight like everything else — this is what makes the difference once planks stop being hard.',
-   alt:'Weighted decline sit-up, or hanging knee raise'}],
-  cool:['Cobra stretch, 30 sec','Child\'s pose, 45 sec','Cat-cow, 10 slow reps']},
+   alt:'Weighted decline sit-up, or hanging knee raise'},
+  {n:'ARM CIRCUIT · cable curl',an:'curl',s:3,r:'15',rest:'none — go straight on',tempo:'1 up · 2 down',inc:'+2.5 kg',
+   cue:'Three exercises back to back with no rest, then 90 seconds off, three rounds. Light weight, high reps, chase the pump rather than the load. Round one: cable curl, 15 reps, elbows pinned.',
+   alt:'Dumbbell curl'},
+  {n:'ARM CIRCUIT · rope pushdown',an:'pushdown',s:3,r:'15',rest:'none — go straight on',tempo:'1 down · 2 up',inc:'+2.5 kg',
+   cue:'Straight from the curls with no rest. Spread the rope at the bottom and hold for a beat. Your arms should be burning by rep 10 — that is the point of this session.',
+   alt:'Bench dips'},
+  {n:'ARM CIRCUIT · hammer curl',an:'curl',s:3,r:'15',rest:'90 sec, then repeat',tempo:'1 up · 2 down',inc:'+2 kg per hand',
+   cue:'Thumbs up, like holding two milk jugs. Then 90 seconds rest and go again from the top. <b>This grip is the one that matters most for you</b> — it trains the brachialis, which sits underneath the biceps and pushes it up, and the brachioradialis, which is the big muscle on the thumb side of your forearm. That combination is what makes an arm look thick in a T-shirt.',
+   alt:'Rope cable hammer curl'}],
+  cool:['Cobra stretch, 30 sec','Child\'s pose, 45 sec','Wrist flexor + extensor stretch, 20 sec each']},
 
- D:{t:'Session D · Back & biceps',d:'Thursdays',time:'40 min lifting + 30 min treadmill',
-  why:'Everything that pulls. This is also the session that undoes eight hours a day leaning over a coffee machine — pay attention to the face pulls.',
+ D:{t:'Session D · Pull & biceps',d:'Thursdays',time:'45 min lifting + 30 min treadmill',
+  why:'Everything that pulls, then three curl variations that hit three different muscles: biceps, brachialis and brachioradialis. The last two are what actually make an arm look thick from the side, and almost nobody trains them. This session also undoes eight hours leaning over a coffee machine — do the face pulls.',
   warm:['5 min easy walk on the treadmill',
         '15 band pull-aparts',
         '10 scapular pulls hanging from the lat pulldown bar (arms straight, just shrug down)',
@@ -673,13 +706,19 @@ const GYM={
   {n:'Cable face pull',an:'facepull',s:3,r:'15–20',rest:'60 sec',tempo:'1 sec in · 2 sec out',inc:'+2.5 kg',
    cue:'Rope at face height. Pull towards your forehead and rotate so your knuckles finish pointing behind you, elbows high. Light weight, high reps. If you do one thing for your posture after nine-hour shifts, do this.',
    alt:'Rear delt fly machine, or bent-over dumbbell rear raises'},
-  {n:'Dumbbell curl',an:'curl',s:3,r:'10–12',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+2 kg per hand',
-   cue:'Elbows stay by your sides. No swinging — if your back is moving, the weight is too heavy. Slow on the way down, that\'s where the growth is.',
-   alt:'Cable curl, or hammer curls'}],
+  {n:'Dumbbell curl',an:'curl',s:3,r:'8–10',rest:'75 sec',tempo:'1 sec up · 3 sec down',inc:'+2 kg per hand',
+   cue:'The heaviest of the three curls — do it first while you\'re fresh. Elbows by your sides, no swinging. If your back is moving, the weight is too heavy. Slow on the way down; that is where most of the growth actually happens.',
+   alt:'EZ-bar curl, or a cable curl'},
+  {n:'Hammer curl',an:'curl',s:3,r:'10–12',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+2 kg per hand',
+   cue:'Thumbs up throughout, like carrying two milk jugs. Hits the brachialis (sits under the biceps and pushes it upward) and the brachioradialis (the thick muscle on the thumb side of the forearm). <b>If you only kept one curl, keep this one</b> — it does more for how big an arm looks than the standard curl does.',
+   alt:'Rope cable curl, thumbs up'},
+  {n:'Reverse curl',an:'curl',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+1–2 kg',
+   cue:'Palms facing DOWN. It will feel humiliatingly light compared to a normal curl — that is correct, everyone finds this. It trains the forearm extensors on the top of your arm, which is the bit that\'s usually underdeveloped and the reason some forearms look flat from above.',
+   alt:'EZ-bar reverse curl, or a reverse cable curl'}],
   cool:['Lat stretch hanging off a rack, 30 sec each side','Doorway chest stretch, 30 sec','Neck side stretch, 20 sec each side']},
 
- E:{t:'Session E · Full body',d:'Sundays',time:'40 min lifting + 30 min treadmill',
-  why:'A second, lighter pass at everything, so each muscle gets trained twice a week. If a week goes badly, this is the session to drop — never session A or C.',
+ E:{t:'Session E · Full body & arm finisher',d:'Sundays',time:'45 min lifting + 30 min treadmill',
+  why:'A second, lighter pass at everything, finished with a curl-and-extension superset and a dead hang. That puts direct arm work on four of your five days — B, C, D and E — which is the frequency arms actually respond to. If a week goes badly, drop this one; never A or C.',
   warm:['5 min easy walk on the treadmill',
         '15 bodyweight squats',
         '15 arm circles + 15 band pull-aparts',
@@ -700,9 +739,15 @@ const GYM={
   {n:'Cable crunch',an:'crunch',s:3,r:'12–15',rest:'60 sec',tempo:'2 sec down · 2 sec up',inc:'+5 kg',
    cue:'Kneel facing the cable, rope behind your head. Curl your ribs towards your hips — spine rounds, hips stay still. It\'s a crunch, not a hip hinge. Abs respond to weight like everything else, so this beats endless sit-ups.',
    alt:'Hanging knee raise, or weighted decline sit-ups'},
-  {n:'Farmer\'s carry',an:'carry',s:3,r:'40 m',rest:'90 sec',tempo:'walk tall',inc:'+2 kg per hand',
-   cue:'Heaviest dumbbells you can hold, walk the length of the gym and back. Shoulders back, don\'t lean. Brutally effective for grip, core and conditioning, and it finishes the session with your heart rate already up.',
-   alt:'Suitcase carry with one dumbbell, swap sides halfway'}],
+  {n:'SUPERSET · EZ-bar or cable curl',an:'curl',s:3,r:'12',rest:'none — straight into the next',tempo:'1 up · 3 down',inc:'+2.5 kg',
+   cue:'Curl 12, then immediately do 12 overhead extensions, then rest 90 seconds. Three rounds. Supersetting biceps with triceps works because one rests while the other works — you get the volume in half the time, which matters when you\'ve got two jobs.',
+   alt:'Dumbbell curl'},
+  {n:'SUPERSET · overhead triceps extension',an:'tri_oh',s:3,r:'12',rest:'90 sec, then repeat',tempo:'3 down · 1 up',inc:'+2 kg',
+   cue:'Straight from the curls. Elbows forward, full stretch behind the head. Your arms should feel genuinely full by the end of round three.',
+   alt:'Rope overhead extension'},
+  {n:'Dead hang',an:'hang',s:3,r:'20–45 sec',rest:'60 sec',tempo:'hold',inc:'+5 sec',
+   cue:'Hang from the pull-up bar, arms straight, shoulders active rather than shrugged up around your ears. Finish every week with this. It builds crushing grip, decompresses a spine that\'s been standing for nine hours, and the moment you can hold 45 seconds cleanly is usually the moment your first pull-up becomes realistic.',
+   alt:'Farmer\'s carry, 40 m'}],
   cool:['Standing quad stretch, 30 sec each','Child\'s pose, 45 sec','Doorway chest stretch, 30 sec']}
 };
 const TREAD=[
@@ -798,6 +843,17 @@ const ANIM={
   bg:'<line x1="54" y1="4" x2="54" y2="14" stroke="#2c3b4b" stroke-width="1.5"/>'+GND,
   a:[52,25, 52,60,52,35, 52,35,50,23,53,13, 52,60,52,78,68,84, 53,13],
   b:[61,38, 52,60,56,46, 56,46,55,34,53,23, 52,60,52,78,68,84, 53,23]},
+ tri_oh:{t:'Elbows point forward and stay there',d:2.6,bg:GND,
+  a:[52,25, 52,58,52,34, 52,34,52,20,52,8, 52,58,52,76,52,96, 52,8],
+  b:[52,25, 52,58,52,34, 52,34,52,20,64,26, 52,58,52,76,52,96, 64,26]},
+ wrist:{t:'Forearm stays down — only the hand moves',d:2,
+  bg:'<rect x="36" y="56" width="42" height="5" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[40,26, 40,58,40,34, 40,34,46,52,72,58, 40,58,70,58,74,84, 78,64],
+  b:[40,26, 40,58,40,34, 40,34,46,52,72,51, 40,58,70,58,74,84, 78,47]},
+ hang:{t:'Just hang. Shoulders active, breathe.',d:3.4,
+  bg:'<line x1="30" y1="12" x2="90" y2="12" stroke="#2c3b4b" stroke-width="4" stroke-linecap="round"/>',
+  a:[52,32, 52,64,52,40, 52,40,52,26,52,13, 52,64,52,80,52,94, -1,-1],
+  b:[53,33, 53,65,53,41, 53,41,53,27,52,13, 53,65,53,81,54,95, -1,-1]},
  carry:{t:'Walk tall, shoulders back, don\'t lean',d:1.6,bg:GND,
   a:[52,21, 52,54,52,30, 52,30,54,42,56,55, 52,54,47,75,41,96, 56,58],
   b:[52,20, 52,53,52,29, 52,29,54,41,56,54, 52,53,59,74,66,96, 56,57],
