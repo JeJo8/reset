@@ -116,6 +116,10 @@ main{padding:14px 14px 20px;max-width:640px;margin:0 auto}
 .det .alt{margin-top:9px;font-size:12px;color:var(--dim);padding-top:9px;border-top:1px solid var(--line)}
 .det .alt b{color:var(--faint)}
 .det .hist{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
+.anim{background:#0b0f14;border:1px solid var(--line);border-radius:10px;padding:6px 4px 2px;margin-bottom:11px}
+.anim svg{width:100%;max-width:230px;height:auto;display:block;margin:0 auto}
+.anim i{display:block;text-align:center;font-style:normal;font-size:11px;color:var(--faint);
+  padding:2px 6px 6px;line-height:1.4}
 .det .hist span{font-size:10.5px;background:var(--bg);border:1px solid var(--line);
   border-radius:99px;padding:3px 8px;color:var(--dim);font-variant-numeric:tabular-nums}
 .inrow{display:flex;align-items:center;gap:7px}
@@ -267,6 +271,40 @@ nav button.on{color:var(--acc)}
   </div>
 
   <div class="card">
+    <div class="ttl">The week · 5 on, 2 off</div>
+    <table style="margin-bottom:10px">
+      <tr><th style="text-align:left">Day</th><th style="text-align:left">Session</th><th>Load</th></tr>
+      <tr><td><b>Mon</b></td><td style="text-align:left">A · Legs &amp; core</td><td class="bad">Hard</td></tr>
+      <tr><td><b>Tue</b></td><td style="text-align:left">B · Push + push-ups</td><td class="bad">Hard</td></tr>
+      <tr><td><b>Wed</b></td><td style="text-align:left">C · Core &amp; conditioning</td><td class="good">Light</td></tr>
+      <tr><td><b>Thu</b></td><td style="text-align:left">D · Back &amp; biceps</td><td class="bad">Hard</td></tr>
+      <tr><td><b>Fri</b></td><td style="text-align:left;color:var(--faint)">Rest</td><td>—</td></tr>
+      <tr><td><b>Sat</b></td><td style="text-align:left;color:var(--faint)">Rest · your busiest shift</td><td>—</td></tr>
+      <tr><td><b>Sun</b></td><td style="text-align:left">E · Full body</td><td class="warnc">Medium</td></tr>
+    </table>
+    <div class="sub">The two hardest sessions sit on <b style="color:var(--tx)">Monday and Tuesday on purpose</b> — they're your 6-hour shift days, so you arrive at the gym with something left and you can train earlier, eat earlier and sleep earlier. Five days, because you asked for discipline, and turning up on a fixed schedule is what builds it. But <b style="color:var(--tx)">Wednesday is deliberately light</b> — 25 minutes of core and push-ups, no heavy loading. You already work seven days across two jobs; if every session is hard, your body will choose a rest day for you and it will choose badly.<br><br>
+    Saturday is your busiest shift, so it's a full rest day — training tired is how form breaks and how people get hurt. That gives you Friday and Saturday off back to back, then a moderate full-body session on Sunday to set up the week.</div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">Push-ups &amp; planks · the progressions</div>
+    <div class="sub" style="margin-bottom:11px">These two are in the plan twice a week and they're the only movements where <b style="color:var(--tx)">your bodyweight is the load</b> — which means they get easier as you lose weight, and that's enormously motivating. Track the numbers.</div>
+    <div class="rule"><em>1</em><div><b>Push-ups: don't start on the floor.</b> At 89 kg a floor push-up is about 65 kg through your chest and shoulders. Start with your hands on the Smith machine bar at hip height. Straight line head to heels, chest to the bar, no sagging hips.</div></div>
+    <div class="rule"><em>2</em><div><b>Lower the bar one notch</b> when you can do 12 clean reps for all sets. Bar at hip height → thigh → knee → bench → floor → feet on a bench. That ladder is your progression; you don't need anything else.</div></div>
+    <div class="rule"><em>3</em><div>Expect floor push-ups to arrive somewhere around 82 kg. They'll feel like a completely different exercise, and you'll remember the day.</div></div>
+    <div class="rule"><em>4</em><div><b>Planks: stop adding time at 60 seconds.</b> Past a minute you're training patience, not core. Progress by making it harder instead — lift one foot, then one arm, then go to the long-lever version with elbows further forward.</div></div>
+    <div class="rule"><em>5</em><div><b>The side plank matters most for you.</b> It trains what stops your lower back aching after nine hours standing. Don't skip it because it's boring.</div></div>
+    <div class="rule"><em>6</em><div>Core work has to be <b>loaded</b> eventually, same as everything else. That's what the cable crunch is for — once planks stop being hard, adding weight is the only thing that keeps working.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">At PureGym</div>
+    <div class="sub">Everything here exists in a standard PureGym: full dumbbell rack, cables, lat pulldown, seated row, leg press, leg curl, chest press and shoulder press machines, Smith machine, and the treadmills.<br><br>
+    Two things vary by branch — a <b style="color:var(--tx)">hack squat</b> and a <b style="color:var(--tx)">chest-supported row bench</b>. If yours doesn't have them, tap the exercise for the alternative. The Smith machine is your push-up bar; set the safety bar at the height you need and leave it there.<br><br>
+    <b style="color:var(--tx)">Go at the same time every day.</b> 19:15 is well past the 5–7pm crush, machines are free, and — the real reason — a fixed time is a decision you make once instead of five times a week. That's what discipline actually is: fewer decisions, not more willpower.</div>
+  </div>
+
+  <div class="card">
     <div class="ttl">Picking your first weights</div>
     <div class="sub">You've no idea what you can lift yet, and that's fine — week 1 is data collection, not training.<br><br>
     <b style="color:var(--tx)">Set 1 of anything:</b> pick a weight you're confident you could do about 15 reps with, and stop at the top of the range. Too light on purpose.<br>
@@ -305,9 +343,9 @@ nav button.on{color:var(--acc)}
     <div class="rule"><em>·</em><div><b>Rest properly between sets.</b> The rest times aren't padding — cutting a 2 minute rest to 45 seconds means you lift less weight, which means less muscle kept. Use the time to log your last set.</div></div>
     <div class="rule"><em>·</em><div><b>Form beats weight, every time.</b> Nobody at the gym is impressed and nobody is watching. Film a set on your phone occasionally and compare it to the cue.</div></div>
     <div class="rule"><em>·</em><div><b>Machine taken?</b> Every exercise has an alternative listed — tap the name. Never stand around waiting; it wrecks the session timing.</div></div>
-    <div class="rule"><em>·</em><div><b>Seven-day work week.</b> If you're genuinely wrecked, drop session D and keep A, B and C. Three sessions you turn up to beat four you resent.</div></div>
+    <div class="rule"><em>·</em><div><b>Seven-day work week, five gym days, zero full rest days from work.</b> If you're genuinely wrecked, drop session E first, then B. Never drop A or C. Four sessions you turn up to beat five you resent.</div></div>
     <div class="rule"><em>·</em><div><b>Soreness 24–48h after is normal</b> and fades within a fortnight. Sharp pain, joint pain, or pain during the movement is not — stop and get it looked at.</div></div>
-    <div class="rule"><em>·</em><div><b>Shoes.</b> You're about to run 120 times over five months at 89 kg. Get properly fitted running shoes before week 5, and replace them at around 700 km.</div></div>
+    <div class="rule"><em>·</em><div><b>Shoes.</b> You're about to run about 150 times over five months at 89 kg. Get properly fitted running shoes before week 5, and replace them at around 700 km.</div></div>
   </div>
 </section>
 
@@ -329,7 +367,7 @@ nav button.on{color:var(--acc)}
   </div>
 
   <div class="card">
-    <div class="ttl">The route · 35 weeks · from the basics up</div>
+    <div class="ttl">The route · 28 weeks · from the basics up</div>
     <div id="phases"></div>
   </div>
 
@@ -340,7 +378,7 @@ nav button.on{color:var(--acc)}
     <div class="rule"><em>SQL</em><div>Explain when a <code>LEFT JOIN</code> gives you rows an <code>INNER JOIN</code> doesn't, and why a <code>WHERE</code> on the right-hand table silently turns one into the other. Write a <code>GROUP BY</code> with a <code>HAVING</code>. Write <code>ROW_NUMBER() OVER (PARTITION BY ...)</code>. Rewrite a subquery as a CTE.</div></div>
     <div class="rule"><em>pd</em><div><code>groupby().agg()</code> with two different functions. <code>merge</code> two frames and explain the <code>how</code> argument. Fill missing values three different ways and say why you'd pick each. Reshape wide to long.</div></div>
     <div class="rule"><em>Stat</em><div>Say in one sentence what a p-value actually means. Explain when the median beats the mean. Explain overfitting to someone non-technical. Explain why a correlation of 0.9 might mean nothing.</div></div>
-    <div class="mini" style="margin-top:11px"><b>Scoring:</b> all four blocks clean → skip to week 8 and start AI literacy. One shaky block → do that block's weeks only. Two or more → do all of weeks 1–7 properly. There's no prize for skipping, and everything from stage 2 onwards silently assumes this.</div>
+    <div class="mini" style="margin-top:11px"><b>Scoring:</b> all four blocks clean → skip to week 7 and start AI literacy. One shaky block → do that block's weeks only. Two or more → do all of weeks 1–6 properly. There's no prize for skipping, and everything from stage 2 onwards silently assumes this.</div>
   </div>
 
   <div class="card">
@@ -354,6 +392,14 @@ nav button.on{color:var(--acc)}
     <div class="sub"><b style="color:var(--acc)">Evals.</b> Anyone can follow a LangChain tutorial and produce a chatbot. Very few can answer "how do you know it's any good?" — and that question is reportedly the strongest single signal of real LLM experience in interviews. Expect to be handed a corpus and asked how you'd chunk it, what embeddings you'd pick, whether you'd rerank, and how you'd measure the result.<br><br>
     The second underrated one is <b style="color:var(--tx)">cost</b>. Most engineers can build a working RAG pipeline; almost none can halve the production bill with quality flat. If you can show a token-spend graph with a caching change in the middle of it, that's a story nobody else in the pile is telling.<br><br>
     <b style="color:var(--tx)">One app, not four repos.</b> Let brewmaster grow: it gains retrieval, then evals, then a model, then monitoring. Depth reads far better than four disconnected tutorials, and "I ran this in production and here's what broke" is the sentence that gets you the offer.</div>
+  </div>
+
+  <div class="card">
+    <div class="ttl">Monday &amp; Tuesday · your build blocks</div>
+    <div class="sub">Your 6-hour shift days are the most valuable hours in this whole plan, and it would be easy to waste them on more coursework.<br><br>
+    <b style="color:var(--tx)">Don't. Use them to build.</b> A DataCamp lesson fits neatly into an hour — that's what the 6:30am slot is for. Shipping code doesn't: you lose the first twenty minutes just reloading the problem into your head, so an hour of building is really forty minutes of building. Two uninterrupted hours is worth more than four separate ones.<br><br>
+    So: <b style="color:var(--tx)">courses in the morning, seven days. Projects on Monday and Tuesday, two hours each.</b> That's roughly 11 hours a week, and it's why this roadmap is 28 weeks rather than 35.<br><br>
+    It also removes the usual failure mode, where the "ship something" step at the end of each stage quietly never happens because there was never a block of time big enough to do it in.</div>
   </div>
 
   <div class="card">
@@ -466,7 +512,7 @@ const TD=iso(today);
 const dayNo=Math.max(0,Math.floor((today-START)/864e5));
 const WEEK=Math.floor(dayNo/7)+1;
 const DOW=today.getDay();                       // 0=Sun
-const SESS={1:'A',2:'R',3:'B',4:'C',5:'R',6:'D',0:'R'};
+const SESS={1:'A',2:'B',3:'C',4:'D',5:'R',6:'R',0:'E'};
 const SES=SESS[DOW];
 
 /* ======================= MEALS ======================= */
@@ -480,21 +526,21 @@ const MEALS=[
   ['20:45','After the gym','1 scoop protein in 300 ml skimmed milk',225,35],
   ['21:15','Dinner','3 boiled eggs + 100 g cooked chicken slices + big salad with 1 tbsp olive oil + 30 g pumpkin seeds',719,61],
   ['Late','If hungry','1 orange + 1 pear',165,2]]},
- {d:'Tue',s:'R',m:[
+ {d:'Tue',s:'B',m:[
   ['12:30','Meal 1 · at work','Roast chicken & salad sandwich, brown bread',495,35],
   ['15:30','Work snack','200 g cottage cheese + 1 apple',255,25],
-  ['18:00','Evening','30 g walnuts + 1 pear',296,6],
-  ['20:00','Shake','1 scoop protein in 300 ml skimmed milk',225,35],
-  ['21:00','Dinner','4 boiled eggs + 200 g cottage cheese + big salad with olive oil + 30 g pumpkin seeds',792,60],
+  ['17:45','Pre-gym','30 g walnuts + 1 pear',296,6],
+  ['20:45','After the gym','1 scoop protein in 300 ml skimmed milk',225,35],
+  ['21:15','Dinner','4 boiled eggs + 200 g cottage cheese + big salad with olive oil + 30 g pumpkin seeds',792,60],
   ['Late','If hungry','1 banana',105,1]]},
- {d:'Wed',s:'B',m:[
+ {d:'Wed',s:'C',m:[
   ['12:30','Meal 1 · at work','Grilled chicken & hummus wrap + side salad',510,34],
   ['15:30','Work snack','3 boiled eggs + 1 banana',339,19],
   ['17:45','Pre-gym','30 g mixed nuts + 1 apple',275,7],
   ['20:45','After the gym','1 scoop protein in 300 ml skimmed milk',225,35],
   ['21:15','Dinner','100 g cooked chicken slices + 170 g Greek yogurt + big salad with olive oil + 30 g pumpkin seeds',585,59],
   ['Late','If hungry','1 banana + 1 apple',200,2]]},
- {d:'Thu',s:'C',m:[
+ {d:'Thu',s:'D',m:[
   ['12:30','Meal 1 · at work','Chicken & avocado sandwich, brown bread',520,34],
   ['15:30','Work snack','3 boiled eggs + 1 apple',330,19],
   ['17:45','Pre-gym','1 banana + 30 g walnuts',301,6],
@@ -508,19 +554,19 @@ const MEALS=[
   ['20:00','Shake','1 scoop protein in 300 ml skimmed milk',225,35],
   ['21:00','Dinner','3 boiled eggs + 100 g cooked chicken slices + big salad with olive oil + 30 g pumpkin seeds',719,61],
   ['Late','If hungry','1 banana + 1 apple',200,2]]},
- {d:'Sat',s:'D',m:[
+ {d:'Sat',s:'R',m:[
   ['12:30','Meal 1 · at work','Chicken & salad sandwich, brown bread',500,36],
   ['15:30','Work snack','3 boiled eggs + 1 banana',339,19],
-  ['17:45','Pre-gym','30 g walnuts + 1 apple',291,6],
-  ['20:45','After the gym','1 scoop protein in 300 ml skimmed milk',225,35],
-  ['21:15','Dinner','200 g cottage cheese + 3 boiled eggs + big salad with olive oil + 30 g pumpkin seeds',714,54],
+  ['18:00','Evening','30 g walnuts + 1 apple',291,6],
+  ['20:00','Shake','1 scoop protein in 300 ml skimmed milk',225,35],
+  ['21:00','Dinner','200 g cottage cheese + 3 boiled eggs + big salad with olive oil + 30 g pumpkin seeds',714,54],
   ['Late','If hungry','1 banana',105,1]]},
- {d:'Sun',s:'R',m:[
+ {d:'Sun',s:'E',m:[
   ['12:30','Meal 1 · at work','Egg & cress sandwich, brown bread',470,26],
   ['15:30','Work snack','170 g Greek yogurt + 30 g walnuts',296,22],
-  ['18:00','Evening','1 banana + 1 apple',200,2],
-  ['20:00','Shake','1 scoop protein in 300 ml skimmed milk',225,35],
-  ['21:00','Dinner','4 boiled eggs + 100 g cooked chicken slices + big salad with olive oil + 30 g pumpkin seeds',797,67],
+  ['17:45','Pre-gym','1 banana + 1 apple',200,2],
+  ['20:45','After the gym','1 scoop protein in 300 ml skimmed milk',225,35],
+  ['21:15','Dinner','4 boiled eggs + 100 g cooked chicken slices + big salad with olive oil + 30 g pumpkin seeds',797,67],
   ['Late','If hungry','1 pear + 1 banana',205,2]]}
 ];
 const SHOP='<b style="color:var(--tx)">Chilled:</b> 3½ dozen eggs · cooked chicken slices ×4 packs (or a roast chicken you pull apart) · cottage cheese ×6 · Greek yogurt ×2 · 4 L skimmed milk<br><br><b style="color:var(--tx)">Cupboard:</b> olive oil · mustard, vinegar, hot sauce<br><br><b style="color:var(--tx)">Fresh:</b> 5 bags of salad · cucumber, tomatoes, peppers, carrots · 7 bananas · 7 apples · 4 pears · oranges · berries<br><br><b style="color:var(--tx)">Already yours:</b> whey protein (~7 scoops/wk) · walnuts (~120 g) · pumpkin seeds (~210 g) · mixed nuts (~90 g)<br><br><span style="color:var(--faint)">Boil six eggs every night for tomorrow. That single habit carries this whole plan.</span><br><br><b style="color:var(--tx)">No tinned fish anywhere.</b> Cooked chicken slices and cottage cheese do the same job — same protein, no cooking, no smell in a small kitchen. If you ever want to swap back in, 100 g of chicken ≈ 1 tin of tuna. Other no-smell swaps at the same protein: 100 g cooked turkey slices, 200 g cottage cheese, 170 g Greek yogurt + 2 eggs, or a scoop of protein in milk.';
@@ -535,97 +581,126 @@ const GYM={
         '10 hip hinges holding a broomstick or empty bar',
         'One light set of 10 on the leg press before your working sets'],
   e:[
-  {n:'Leg press',s:3,r:'10–12',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+10 kg',
+  {n:'Leg press',an:'squat',s:3,r:'10–12',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+10 kg',
    cue:'Feet shoulder-width, mid-foot. Push through the heels. Stop just short of locking the knees — locking dumps the load onto the joint instead of the muscle. Lower until your knees are at about 90°, no further at first.',
    alt:'Hack squat, or goblet squat holding one dumbbell at your chest'},
-  {n:'Dumbbell Romanian deadlift',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
+  {n:'Dumbbell Romanian deadlift',an:'hinge',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
    cue:'Knees soft, not bent. Push your hips back like you\'re closing a car door with them, dumbbells sliding down your thighs. Stop when you feel the stretch in the back of your legs — usually mid-shin. Back stays flat throughout. This is a hip movement, not a squat.',
    alt:'Back extension machine, or a kettlebell RDL'},
-  {n:'Walking lunge',s:2,r:'12 each leg',rest:'90 sec',tempo:'controlled',inc:'add dumbbells from week 3',
+  {n:'Walking lunge',an:'lunge',s:2,r:'12 each leg',rest:'90 sec',tempo:'controlled',inc:'add dumbbells from week 3',
    cue:'Long step, back knee down towards the floor, front shin roughly vertical. Push through the front heel to stand. Bodyweight only for the first fortnight — at 89 kg that\'s already plenty of load.',
    alt:'Split squat holding a rack for balance, or step-ups onto a low box'},
-  {n:'Seated leg curl',s:3,r:'12–15',rest:'75 sec',tempo:'1 sec in · 3 sec out',inc:'+5 kg',
+  {n:'Seated leg curl',an:'legcurl',s:3,r:'12–15',rest:'75 sec',tempo:'1 sec in · 3 sec out',inc:'+5 kg',
    cue:'Hamstrings get almost nothing from the leg press, so don\'t skip this. Squeeze hard at the bottom, then fight the weight slowly on the way back. The slow return is where the work is.',
    alt:'Lying leg curl, or a Nordic curl with a partner holding your ankles'},
-  {n:'Calf raise (any machine)',s:3,r:'15–20',rest:'60 sec',tempo:'2 sec up · 3 sec down · pause',inc:'+5 kg',
+  {n:'Calf raise (any machine)',an:'calf',s:3,r:'15–20',rest:'60 sec',tempo:'2 sec up · 3 sec down · pause',inc:'+5 kg',
    cue:'Full stretch at the bottom, full squeeze at the top, pause for a beat at each end. Running four times a week loads your calves and Achilles hard — this is the insurance policy.',
    alt:'Standing calf raise off a step holding dumbbells'},
-  {n:'Plank',s:3,r:'30–45 sec',rest:'45 sec',tempo:'hold',inc:'+5 sec',
+  {n:'Plank',an:'plank',s:3,r:'30–45 sec',rest:'45 sec',tempo:'hold',inc:'+5 sec',
    cue:'Elbows under shoulders, squeeze the glutes, tuck the ribs down. Hips must not sag. If it\'s easy at 45 seconds, don\'t go longer — lift one foot off the floor instead.',
    alt:'Dead bug, 10 slow reps each side'}],
   cool:['Standing quad stretch, 30 sec each leg','Seated hamstring stretch, 30 sec each leg','Calf stretch against a wall, 30 sec each']},
 
- B:{t:'Session B · Chest, shoulders, triceps',d:'Wednesdays',time:'40 min lifting + 30 min treadmill',
-  why:'Everything that pushes. Chest, front and side shoulders, triceps — trained together so they get a full 72 hours to recover before session D.',
+ B:{t:'Session B · Push + push-ups',d:'Tuesdays',time:'40 min lifting + 30 min treadmill',
+  why:'Everything that pushes — chest, front and side shoulders, triceps — finished with push-ups to failure so you have a bodyweight number that goes up over the months.',
   warm:['5 min easy walk on the treadmill',
         '15 arm circles forwards, 15 backwards',
         '15 band pull-aparts (or slow arm swings across your chest)',
         'One light set of 12 on the chest press'],
   e:[
-  {n:'Machine chest press',s:3,r:'8–10',rest:'2 min',tempo:'3 sec in · 1 sec out',inc:'+5 kg',
+  {n:'Machine chest press',an:'press_h',s:3,r:'8–10',rest:'2 min',tempo:'3 sec in · 1 sec out',inc:'+5 kg',
    cue:'Set the seat so the handles line up with the middle of your chest, not your throat. Let the handles come back until you feel a stretch across the chest — most people cut this short and wonder why nothing grows. Shoulder blades pinned back against the pad.',
    alt:'Flat barbell bench press, or dumbbell bench press'},
-  {n:'Incline dumbbell press',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
+  {n:'Incline dumbbell press',an:'press_inc',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
    cue:'Bench at 30°, not 45 — steeper turns it into a shoulder press. Dumbbells start level with your upper chest, press up and slightly together. Don\'t clang them at the top.',
    alt:'Incline machine press, or incline push-ups with hands on a bench'},
-  {n:'Shoulder press machine',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2.5 kg',
+  {n:'Shoulder press machine',an:'press_oh',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2.5 kg',
    cue:'Ribs down, don\'t arch your lower back to get the weight up. Press until your arms are nearly straight, stop short of locking out.',
    alt:'Seated dumbbell shoulder press with a back support'},
-  {n:'Cable lateral raise',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+1–2 kg',
+  {n:'Cable lateral raise',an:'latraise',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+1–2 kg',
    cue:'Genuinely light — this is the exercise everyone loads too heavy. Lead with the elbow, raise to shoulder height, no higher. If you\'re swinging or shrugging, halve the weight. Side delts are what make your shoulders look wider as the weight comes off.',
    alt:'Dumbbell lateral raise, seated so you can\'t cheat with your legs'},
-  {n:'Rope triceps pushdown',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec down · 2 sec up',inc:'+2.5 kg',
+  {n:'Rope triceps pushdown',an:'pushdown',s:3,r:'12–15',rest:'60 sec',tempo:'1 sec down · 2 sec up',inc:'+2.5 kg',
    cue:'Elbows pinned to your sides and they stay there. Push down and spread the rope apart at the bottom, squeeze for a beat. Only your forearms move.',
-   alt:'Overhead dumbbell triceps extension, or bench dips'}],
+   alt:'Overhead dumbbell triceps extension, or bench dips'},
+  {n:'Push-ups · to 2 short of failure',an:'pushup',s:3,r:'max −2',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'lower the bar one notch',
+   cue:'At 89 kg do NOT start on the floor — start with hands on the Smith machine bar set at hip height, or on a bench. Body in one straight line, hips neither sagging nor stuck up, chest to the bar. As you get stronger, lower the bar a notch. Floor push-ups will come somewhere around 82 kg, and they will feel enormous when they do. Stop each set 2 reps before you\'d fail.',
+   alt:'Machine assisted dip, or an incline push-up on a bench'}],
   cool:['Doorway chest stretch, 30 sec each side','Cross-body shoulder stretch, 30 sec each','Overhead triceps stretch, 30 sec each']},
 
- C:{t:'Session C · Back & biceps',d:'Thursdays',time:'40 min lifting + 30 min treadmill',
+ C:{t:'Session C · Core, push-ups & conditioning',d:'Wednesdays',time:'25 min work + 30 min cardio · the light day',
+  why:'Deliberately the easy one. You work seven days across two jobs and you\'re now training five — something has to be light or your body picks the rest day for you, usually via an injury. No heavy loading, all core and bodyweight. Turn up, do it, go home.',
+  warm:['5 min easy walk on the treadmill',
+        '15 bodyweight squats + 15 arm circles',
+        '10 dead bugs, slow'],
+  e:[
+  {n:'Push-ups',an:'pushup',s:4,r:'max −2',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'lower the bar one notch',
+   cue:'Same progression as Tuesday, but four sets and this is the main event rather than a finisher. Track the number — going from 6 incline push-ups to 20 floor push-ups over five months is one of the most satisfying things on this whole plan, and unlike the scale it never lies to you.',
+   alt:'Incline push-up on a bench, or knee push-ups'},
+  {n:'Plank',an:'plank',s:3,r:'30–60 sec',rest:'60 sec',tempo:'hold',inc:'+10 sec, then harder variation',
+   cue:'Elbows under shoulders, glutes squeezed, ribs tucked down, hips level. Once you can hold 60 seconds cleanly, STOP adding time — go to a harder version instead (lift one foot, then one arm). Three-minute planks build nothing but patience.',
+   alt:'High plank on your hands if your elbows hurt'},
+  {n:'Side plank',an:'sideplank',s:3,r:'20–40 sec each side',rest:'45 sec',tempo:'hold',inc:'+5 sec each side',
+   cue:'Elbow under shoulder, body in a straight line from head to heels, hips pushed up and forward. This trains the muscles that stop your lower back complaining after nine hours standing — arguably the most useful thing in this session.',
+   alt:'Side plank with knees bent, if the full version drops your hips'},
+  {n:'Dead bug',an:'deadbug',s:3,r:'10 each side',rest:'45 sec',tempo:'slow, 3 sec out',inc:'hold a light weight',
+   cue:'Lie on your back, arms up, knees at 90°. Lower the opposite arm and leg slowly while your lower back stays flat against the floor. The moment your back arches off the floor, you\'ve gone too far — shorten the range.',
+   alt:'Bird dog on all fours, 10 each side'},
+  {n:'Hollow body hold',an:'hollow',s:3,r:'20–30 sec',rest:'45 sec',tempo:'hold',inc:'+5 sec, then straighten the legs',
+   cue:'On your back, lower back pressed flat, shoulders and legs off the floor. Bend your knees to make it easier, straighten them to make it harder. Brutal for something that looks like lying down.',
+   alt:'Hanging knee raise, or lying leg raise'},
+  {n:'Cable crunch',an:'crunch',s:3,r:'12–15',rest:'60 sec',tempo:'2 sec down · 2 sec up',inc:'+5 kg',
+   cue:'The only loaded core movement in the session. Kneel facing the cable, rope behind the head, curl your ribs towards your hips. Abs grow from weight like everything else — this is what makes the difference once planks stop being hard.',
+   alt:'Weighted decline sit-up, or hanging knee raise'}],
+  cool:['Cobra stretch, 30 sec','Child\'s pose, 45 sec','Cat-cow, 10 slow reps']},
+
+ D:{t:'Session D · Back & biceps',d:'Thursdays',time:'40 min lifting + 30 min treadmill',
   why:'Everything that pulls. This is also the session that undoes eight hours a day leaning over a coffee machine — pay attention to the face pulls.',
   warm:['5 min easy walk on the treadmill',
         '15 band pull-aparts',
         '10 scapular pulls hanging from the lat pulldown bar (arms straight, just shrug down)',
         'One light set of 12 on the pulldown'],
   e:[
-  {n:'Lat pulldown',s:3,r:'8–10',rest:'2 min',tempo:'2 sec down · 3 sec up',inc:'+5 kg',
+  {n:'Lat pulldown',an:'pulldown',s:3,r:'8–10',rest:'2 min',tempo:'2 sec down · 3 sec up',inc:'+5 kg',
    cue:'Wide-ish grip. Think about driving your elbows down towards your back pockets rather than pulling with your hands. Bar to your collarbone, chest up to meet it. Control the way back up — don\'t let it yank your arms straight.',
    alt:'Assisted pull-up machine, or a close-grip pulldown'},
-  {n:'Seated cable row',s:3,r:'8–10',rest:'2 min',tempo:'2 sec in · 3 sec out',inc:'+5 kg',
+  {n:'Seated cable row',an:'row',s:3,r:'8–10',rest:'2 min',tempo:'2 sec in · 3 sec out',inc:'+5 kg',
    cue:'Chest up, slight lean back and hold it there — no rocking backwards and forwards. Pull to your belly button, squeeze the shoulder blades together for a beat. Let the weight stretch your back at the front of the rep.',
    alt:'Chest-supported machine row, or a one-arm dumbbell row'},
-  {n:'Chest-supported dumbbell row',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec up · 3 sec down',inc:'+2 kg per hand',
+  {n:'Chest-supported dumbbell row',an:'row',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec up · 3 sec down',inc:'+2 kg per hand',
    cue:'Lie face-down on an incline bench. The chest support means your lower back does nothing, so you can go heavier safely. Elbows close to your body, pull towards your hips.',
    alt:'One-arm dumbbell row with a knee on the bench'},
-  {n:'Cable face pull',s:3,r:'15–20',rest:'60 sec',tempo:'1 sec in · 2 sec out',inc:'+2.5 kg',
+  {n:'Cable face pull',an:'facepull',s:3,r:'15–20',rest:'60 sec',tempo:'1 sec in · 2 sec out',inc:'+2.5 kg',
    cue:'Rope at face height. Pull towards your forehead and rotate so your knuckles finish pointing behind you, elbows high. Light weight, high reps. If you do one thing for your posture after nine-hour shifts, do this.',
    alt:'Rear delt fly machine, or bent-over dumbbell rear raises'},
-  {n:'Dumbbell curl',s:3,r:'10–12',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+2 kg per hand',
+  {n:'Dumbbell curl',an:'curl',s:3,r:'10–12',rest:'60 sec',tempo:'1 sec up · 3 sec down',inc:'+2 kg per hand',
    cue:'Elbows stay by your sides. No swinging — if your back is moving, the weight is too heavy. Slow on the way down, that\'s where the growth is.',
    alt:'Cable curl, or hammer curls'}],
   cool:['Lat stretch hanging off a rack, 30 sec each side','Doorway chest stretch, 30 sec','Neck side stretch, 20 sec each side']},
 
- D:{t:'Session D · Full body',d:'Saturdays',time:'40 min lifting + 30 min treadmill',
-  why:'A lighter second pass at everything, so each muscle gets hit twice a week without four separate heavy sessions. This is the one to drop if the seven-day work week is grinding you down.',
+ E:{t:'Session E · Full body',d:'Sundays',time:'40 min lifting + 30 min treadmill',
+  why:'A second, lighter pass at everything, so each muscle gets trained twice a week. If a week goes badly, this is the session to drop — never session A or C.',
   warm:['5 min easy walk on the treadmill',
         '15 bodyweight squats',
         '15 arm circles + 15 band pull-aparts',
         'One light set of each of the first two exercises'],
   e:[
-  {n:'Goblet squat',s:3,r:'10–12',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2.5 kg',
+  {n:'Goblet squat',an:'squat',s:3,r:'10–12',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2.5 kg',
    cue:'One dumbbell held vertically at your chest, elbows tucked inside your knees. Sit down between your feet, chest tall. The dumbbell at the front acts as a counterweight and makes good form almost automatic.',
    alt:'Leg press, or a bodyweight box squat'},
-  {n:'Dumbbell bench press',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
+  {n:'Dumbbell bench press',an:'press_h',s:3,r:'8–10',rest:'2 min',tempo:'3 sec down · 1 sec up',inc:'+2 kg per hand',
    cue:'Feet flat on the floor, shoulder blades squeezed together. Lower until your upper arms are level with the bench. Dumbbells over your elbows, not out wide.',
    alt:'Machine chest press, or push-ups to failure'},
-  {n:'One-arm dumbbell row',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec up · 3 sec down',inc:'+2 kg',
+  {n:'One-arm dumbbell row',an:'row',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec up · 3 sec down',inc:'+2 kg',
    cue:'Knee and hand on the bench, back flat and parallel to the floor. Pull the dumbbell to your hip, not your shoulder. Don\'t twist your torso to get an extra inch.',
    alt:'Seated cable row'},
-  {n:'Dumbbell shoulder press',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'+2 kg per hand',
+  {n:'Dumbbell shoulder press',an:'press_oh',s:3,r:'10–12',rest:'90 sec',tempo:'2 sec down · 1 sec up',inc:'+2 kg per hand',
    cue:'Seated with a back support. Start at ear height, press up. Ribs down — the lower back arch is the tell that it\'s too heavy.',
    alt:'Shoulder press machine, or a landmine press'},
-  {n:'Cable crunch',s:3,r:'12–15',rest:'60 sec',tempo:'2 sec down · 2 sec up',inc:'+5 kg',
+  {n:'Cable crunch',an:'crunch',s:3,r:'12–15',rest:'60 sec',tempo:'2 sec down · 2 sec up',inc:'+5 kg',
    cue:'Kneel facing the cable, rope behind your head. Curl your ribs towards your hips — spine rounds, hips stay still. It\'s a crunch, not a hip hinge. Abs respond to weight like everything else, so this beats endless sit-ups.',
    alt:'Hanging knee raise, or weighted decline sit-ups'},
-  {n:'Farmer\'s carry',s:3,r:'40 m',rest:'90 sec',tempo:'walk tall',inc:'+2 kg per hand',
+  {n:'Farmer\'s carry',an:'carry',s:3,r:'40 m',rest:'90 sec',tempo:'walk tall',inc:'+2 kg per hand',
    cue:'Heaviest dumbbells you can hold, walk the length of the gym and back. Shoulders back, don\'t lean. Brutally effective for grip, core and conditioning, and it finishes the session with your heart rate already up.',
    alt:'Suitcase carry with one dumbbell, swap sides halfway'}],
   cool:['Standing quad stretch, 30 sec each','Child\'s pose, 45 sec','Doorway chest stretch, 30 sec']}
@@ -642,36 +717,146 @@ const TREAD=[
 ];
 const tread=w=>TREAD.find(t=>w>=t[0]&&w<=t[1])||TREAD[TREAD.length-1];
 
+/* ================= EXERCISE ANIMATIONS =================
+   Schematic stick figures drawn as self-contained SVG — no images, no network,
+   works with the phone offline. They show the movement PATH; the written cue
+   underneath carries the detail that actually keeps you safe.
+   pose = [headX,headY, hipX,hipY,shX,shY, shX,shY,elbX,elbY,handX,handY,
+           hipX,hipY,kneeX,kneeY,footX,footY, weightX,weightY]   (-1,-1 = no weight)  */
+const GND='<line x1="6" y1="96" x2="114" y2="96" stroke="#3a4a5a" stroke-width="1.5"/>';
+const ANIM={
+ squat:{t:'Sit down between your feet, chest tall',d:3,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,45,41,45,33, 52,54,52,74,52,96, 45,33],
+  b:[53,39, 46,70,50,47, 50,47,43,57,43,49, 46,70,62,80,52,96, 43,49]},
+ hinge:{t:'Hips travel back, not down',d:3,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,52,42,52,54, 52,54,52,74,52,96, 52,54],
+  b:[35,38, 60,56,41,45, 41,45,43,59,45,72, 60,56,56,76,52,96, 45,72]},
+ lunge:{t:'Long step, back knee towards the floor',d:3,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,50,42,50,54, 52,54,52,74,52,96, -1,-1],
+  b:[52,27, 52,60,52,36, 52,36,50,48,50,60, 52,60,72,78,76,96, -1,-1],
+  a2:[52,54,52,74,52,96], b2:[52,60,36,80,28,96]},
+ legcurl:{t:'Heels to backside, slow on the way out',d:2.6,
+  bg:'<rect x="26" y="70" width="66" height="4" rx="2" fill="#2c3b4b"/>',
+  a:[22,64, 58,70,32,67, 32,67,26,74,20,78, 58,70,78,71,94,72, 94,72],
+  b:[22,64, 58,70,32,67, 32,67,26,74,20,78, 58,70,78,71,82,50, 82,50]},
+ calf:{t:'Full stretch down, full squeeze up, pause both ends',d:2.4,
+  bg:'<rect x="40" y="92" width="26" height="6" rx="1" fill="#2c3b4b"/>'+GND,
+  a:[52,25, 52,58,52,34, 52,34,50,45,50,57, 52,58,52,76,52,92, -1,-1],
+  b:[52,17, 52,50,52,26, 52,26,50,37,50,49, 52,50,52,70,52,90, -1,-1]},
+ plank:{t:'One straight line — hips neither sag nor pike',d:3.4,bg:GND,
+  a:[24,60, 72,68,34,64, 34,64,28,78,26,90, 72,68,88,72,102,90, -1,-1],
+  b:[24,62, 72,71,34,66, 34,66,28,79,26,90, 72,71,88,76,102,90, -1,-1]},
+ sideplank:{t:'Hips pushed up and forward, body in a line',d:3.4,bg:GND,
+  a:[26,58, 74,70,36,64, 36,64,30,78,28,90, 74,70,88,76,102,88, -1,-1],
+  b:[26,52, 74,64,36,58, 36,58,30,76,28,90, 74,64,88,70,102,84, -1,-1]},
+ deadbug:{t:'Opposite arm and leg out — lower back stays flat',d:3.2,bg:GND,
+  a:[26,80, 70,88,34,84, 34,84,32,70,32,58, 70,88,76,68,62,64, -1,-1],
+  b:[26,80, 70,88,34,84, 34,84,24,74,14,68, 70,88,84,80,100,78, -1,-1]},
+ hollow:{t:'Shoulders and legs off the floor, back pressed down',d:3.2,bg:GND,
+  a:[26,80, 62,90,36,84, 36,84,32,72,30,62, 62,90,80,82,98,76, -1,-1],
+  b:[26,74, 62,88,36,80, 36,80,32,68,30,58, 62,88,80,76,98,66, -1,-1]},
+ pushup:{t:'Hands on a bar — chest to the bar, hips level',d:3,bg:
+  '<rect x="14" y="72" width="34" height="4" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[30,46, 78,72,40,54, 40,54,38,64,36,74, 78,72,90,84,98,94, -1,-1],
+  b:[34,54, 80,76,44,62, 44,62,32,68,36,74, 80,76,91,86,98,94, -1,-1]},
+ press_h:{t:'Full stretch at the bottom, elbows under the weight',d:2.8,
+  bg:'<rect x="30" y="62" width="56" height="5" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[20,52, 72,62,36,58, 36,58,36,45,36,32, 72,62,84,76,94,94, 36,32],
+  b:[20,52, 72,62,36,58, 36,58,26,50,38,49, 72,62,84,76,94,94, 38,49]},
+ press_inc:{t:'Bench at 30°, press up and slightly together',d:2.8,
+  bg:'<path d="M28 46 L84 72" stroke="#2c3b4b" stroke-width="5" stroke-linecap="round"/>'+GND,
+  a:[24,40, 78,68,40,48, 40,48,40,34,40,22, 78,68,88,80,96,94, 40,22],
+  b:[24,40, 78,68,40,48, 40,48,30,42,42,40, 78,68,88,80,96,94, 42,40]},
+ press_oh:{t:'Ribs down — don\'t arch to get it up',d:2.8,
+  bg:'<rect x="44" y="58" width="30" height="4" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[52,23, 52,58,52,34, 52,34,42,41,46,29, 52,58,70,66,72,86, 46,29],
+  b:[52,23, 52,58,52,34, 52,34,48,23,50,11, 52,58,70,66,72,86, 50,11]},
+ latraise:{t:'Lead with the elbow, stop at shoulder height',d:2.8,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,54,42,56,54, 52,54,52,74,52,96, 56,54],
+  b:[52,21, 52,54,52,30, 52,30,66,32,80,30, 52,54,52,74,52,96, 80,30]},
+ pushdown:{t:'Elbows pinned to your sides — only forearms move',d:2.4,
+  bg:'<line x1="56" y1="6" x2="56" y2="30" stroke="#2c3b4b" stroke-width="1.5"/>'+GND,
+  a:[52,21, 52,54,52,30, 52,30,54,42,52,31, 52,54,52,74,52,96, 52,31],
+  b:[52,21, 52,54,52,30, 52,30,54,42,57,55, 52,54,52,74,52,96, 57,55]},
+ pulldown:{t:'Drive the elbows down towards your back pockets',d:2.8,
+  bg:'<line x1="58" y1="4" x2="58" y2="12" stroke="#2c3b4b" stroke-width="1.5"/>'
+    +'<rect x="42" y="58" width="30" height="4" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[52,25, 52,58,52,34, 52,34,55,22,58,11, 52,58,70,66,72,86, 58,11],
+  b:[52,25, 52,58,52,34, 52,34,66,33,58,29, 52,58,70,66,72,86, 58,29]},
+ row:{t:'Chest up, pull to the belly, squeeze the blades',d:2.8,
+  bg:'<rect x="30" y="58" width="30" height="4" rx="2" fill="#2c3b4b"/>'+GND,
+  a:[40,26, 40,58,40,34, 40,34,58,36,78,38, 40,58,64,62,72,80, 78,38],
+  b:[40,26, 40,58,40,34, 40,34,50,42,42,48, 40,58,64,62,72,80, 42,48]},
+ facepull:{t:'Pull to the forehead, elbows high, knuckles back',d:2.8,
+  bg:'<line x1="86" y1="26" x2="112" y2="26" stroke="#2c3b4b" stroke-width="1.5"/>'+GND,
+  a:[40,22, 40,54,40,30, 40,30,60,28,84,26, 40,54,40,74,40,96, 84,26],
+  b:[40,22, 40,54,40,30, 40,30,56,17,46,23, 40,54,40,74,40,96, 46,23]},
+ curl:{t:'Elbows by your sides, no swinging',d:2.6,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,52,42,53,55, 52,54,52,74,52,96, 53,55],
+  b:[52,21, 52,54,52,30, 52,30,52,42,43,33, 52,54,52,74,52,96, 43,33]},
+ crunch:{t:'Curl the ribs to the hips — spine rounds, hips still',d:2.8,
+  bg:'<line x1="54" y1="4" x2="54" y2="14" stroke="#2c3b4b" stroke-width="1.5"/>'+GND,
+  a:[52,25, 52,60,52,35, 52,35,50,23,53,13, 52,60,52,78,68,84, 53,13],
+  b:[61,38, 52,60,56,46, 56,46,55,34,53,23, 52,60,52,78,68,84, 53,23]},
+ carry:{t:'Walk tall, shoulders back, don\'t lean',d:1.6,bg:GND,
+  a:[52,21, 52,54,52,30, 52,30,54,42,56,55, 52,54,47,75,41,96, 56,58],
+  b:[52,20, 52,53,52,29, 52,29,54,41,56,54, 52,53,59,74,66,96, 56,57],
+  a2:[52,54,58,75,65,96], b2:[52,53,47,74,40,96]}
+};
+function animSVG(k){
+  const A=ANIM[k]; if(!A) return '';
+  const seg=(p,i,n)=>p.slice(i,i+n*2).map((v,j)=>j%2?v:v).join(' ');
+  const mk=p=>({t:seg(p,2,2), a:seg(p,6,3), l:seg(p,12,3), h:[p[0],p[1]], w:[p[18],p[19]]});
+  const A1=mk(A.a), B1=mk(A.b);
+  const dur=(A.d||2.8)+'s';
+  const anim=(v1,v2)=>`<animate attributeName="points" values="${v1};${v2};${v1}" dur="${dur}" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".4 0 .6 1;.4 0 .6 1"/>`;
+  const animC=(at,v1,v2)=>`<animate attributeName="${at}" values="${v1};${v2};${v1}" dur="${dur}" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".4 0 .6 1;.4 0 .6 1"/>`;
+  const far=(v1,v2)=>`<polyline points="${v1}" fill="none" stroke="#4a5d70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(4,0)">${anim(v1,v2)}</polyline>`;
+  const lim=(v1,v2)=>`<polyline points="${v1}" fill="none" stroke="#4dd4ac" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">${anim(v1,v2)}</polyline>`;
+  const w=A1.w[0]>=0?`<circle cx="${A1.w[0]}" cy="${A1.w[1]}" r="4.6" fill="#ffb454">${animC('cx',A1.w[0],B1.w[0])}${animC('cy',A1.w[1],B1.w[1])}</circle>`:'';
+  const l2=A.a2?far(A.a2.join(' '),A.b2.join(' ')):far(A1.l,B1.l);
+  const a2=far(A1.a,B1.a);
+  return `<div class="anim"><svg viewBox="0 0 120 104" aria-hidden="true">
+    <g stroke-linecap="round">${A.bg||''}</g>
+    ${l2}${a2}
+    ${lim(A1.l,B1.l)}
+    <polyline points="${A1.t}" fill="none" stroke="#e8eef5" stroke-width="4" stroke-linecap="round">${anim(A1.t,B1.t)}</polyline>
+    ${lim(A1.a,B1.a)}
+    <circle cx="${A1.h[0]}" cy="${A1.h[1]}" r="7" fill="#e8eef5">${animC('cx',A1.h[0],B1.h[0])}${animC('cy',A1.h[1],B1.h[1])}</circle>
+    ${w}
+  </svg><i>${A.t}</i></div>`;
+}
+
 /* ======================= STUDY ======================= */
 const PHASES=[
- [1,3,  'Python from the ground up','Python Programming Fundamentals → Associate Python Developer',
+ [1,2,  'Python from the ground up','Python Programming Fundamentals → Associate Python Developer',
   '~20 hrs. Variables, types, control flow, functions, comprehensions, error handling, then classes and modules. <b>Do the OOP and error-handling parts properly</b> — AI engineering is a software job, and this is where most course-only people are exposed.<br><br>Take the <b>skip test</b> below first. If Python is genuinely solid, do the Associate Python Developer track instead and be done in a week.<br><br><b>Ship:</b> one small script with functions, a class and a <code>try/except</code>, in a repo with a <code>requirements.txt</code> that someone else could actually run.',
   'https://www.datacamp.com/tracks/python-programming-fundamentals'],
- [4,5,  'SQL from the ground up','Introduction to SQL → Intermediate SQL → Joining Data',
+ [3,4,  'SQL from the ground up','Introduction to SQL → Intermediate SQL → Joining Data',
   '~15 hrs. SELECT and WHERE, then GROUP BY and HAVING, then the part that actually matters: <b>joins</b>. Inner vs left, and why rows silently disappear. Finish with subqueries, CTEs and one window function.<br><br>You will be tested on this in interviews for years. It is worth over-learning.<br><br><b>Ship:</b> five queries against your own brewmaster data, saved in the repo with a line of comment each saying what question they answer.',
   'https://www.datacamp.com/courses/introduction-to-sql'],
- [6,7,  'pandas and enough statistics','Data Manipulation with pandas · Intro to Statistics in Python',
+ [5,6,  'pandas and enough statistics','Data Manipulation with pandas · Intro to Statistics in Python',
   '~15 hrs. <code>groupby</code>, <code>merge</code>, missing values, reshaping. Then the statistics you need to not embarrass yourself: distributions, mean vs median on skewed data, correlation, sampling, and what a p-value does and doesn\'t say.<br><br>You don\'t need heavy maths for AI engineering — you need enough to know when a number is lying to you.<br><br><b>Ship:</b> one notebook on real brewmaster-app or GoatCounter data — load, clean, three questions, three charts. Commit to <code>cafe-analytics</code>.',
   'https://www.datacamp.com/courses/data-manipulation-with-pandas'],
- [8,8,  'Get AI-literate','AI Fundamentals · Generative AI Concepts',
+ [7,7,  'Get AI-literate','AI Fundamentals · Generative AI Concepts',
   '~8 hrs. Enough vocabulary to explain ML vs deep learning vs LLM vs generative AI without hand-waving.<br><br><b>Ship:</b> a short "What is an LLM?" page on brewmaster-app.com, in your own words. Teaching it is how you find out whether you actually understood it.',
   'https://www.datacamp.com/tracks/ai-fundamentals'],
- [9,13, 'AI engineering — moved to the front','Associate AI Engineer for Developers',
-  '~35 hrs. <b>This is the reorder that matters.</b> OpenAI API, Hugging Face, LangChain, embeddings, vector search, RAG, agents. It\'s the job you\'re actually applying for, and it\'s where being able to deploy is an unfair advantage over everyone else on the course.<br><br><b>Ship (flagship):</b> Barista AI — RAG over your own menu and recipe docs, in React, deployed the way you already deploy. Live by about week 13.',
+ [8,11, 'AI engineering — moved to the front','Associate AI Engineer for Developers',
+  '~35 hrs. <b>This is the reorder that matters.</b> OpenAI API, Hugging Face, LangChain, embeddings, vector search, RAG, agents. It\'s the job you\'re actually applying for, and it\'s where being able to deploy is an unfair advantage over everyone else on the course.<br><br><b>Ship (flagship):</b> Barista AI — RAG over your own menu and recipe docs, in React, deployed the way you already deploy. Live by about week 11.',
   'https://www.datacamp.com/tracks/associate-ai-engineer-for-developers'],
- [14,16,'Evals, cost and failure modes','Not on DataCamp — you build this',
+ [12,13,'Evals, cost and failure modes','Not on DataCamp — you build this',
   '<b>The single biggest signal of real LLM experience</b>, and it\'s missing from almost every roadmap. Interviewers hand you a corpus and watch how you\'d chunk, embed and rerank — and how you\'d measure whether any of it worked.<br><br>Learn <code>ragas</code> for retrieval groundedness, <code>promptfoo</code> or <code>DeepEval</code> for prompt regression tests, LangSmith for tracing. Then log your token spend, add caching, and get a real before/after number.<br><br><b>Ship:</b> an eval suite on Barista AI, and a README documenting where retrieval failed and how you caught it.',
   'https://docs.ragas.io/'],
- [17,22,'Backfill core ML','Associate Data Scientist in Python',
-  '~40 hrs, the biggest single block, and the one everyone underestimates — budget for it running over. It\'s backfill now rather than a blocker, because you already have an app live.<br><br><b>Ship:</b> a daily-sales or repeat-customer model folded into brewmaster, not a separate repo.<br><br><b style="color:var(--warn)">Start applying at week 17.</b> Not because you\'ll get those jobs — because job ads are the only honest curriculum, and you need to see what your market actually asks for.',
+ [14,18,'Backfill core ML','Associate Data Scientist in Python',
+  '~40 hrs, the biggest single block, and the one everyone underestimates — budget for it running over. It\'s backfill now rather than a blocker, because you already have an app live.<br><br><b>Ship:</b> a daily-sales or repeat-customer model folded into brewmaster, not a separate repo.<br><br><b style="color:var(--warn)">Start applying at week 14.</b> Not because you\'ll get those jobs — because job ads are the only honest curriculum, and you need to see what your market actually asks for.',
   'https://www.datacamp.com/tracks/associate-data-scientist-in-python'],
- [23,25,'Deep learning — literacy only','Introduction to Deep Learning with PyTorch',
+ [19,20,'Deep learning — literacy only','Introduction to Deep Learning with PyTorch',
   '~18 hrs. Be honest about why you\'re doing it: you will rarely touch PyTorch in an AI engineering job. This is so you can answer the question, not because the work needs it. <b>If time gets tight, this is the stage to cut.</b><br><br><b>Ship:</b> one small classifier you can explain end to end in an interview.',
   'https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch'],
- [26,28,'Run it like production','MLOps Concepts · Docker · MLflow',
+ [21,22,'Run it like production','MLOps Concepts · Docker · MLflow',
   '~15 hrs — selected courses from the Machine Learning Engineer track. Containers, experiment tracking, monitoring. Enough to speak the language in an interview.<br><br><b>Ship:</b> monitoring and a clear architecture README on brewmaster. A well-documented deploy is itself a hiring signal.',
   'https://www.datacamp.com/tracks/machine-learning-engineer'],
- [29,35,'Prove it and get hired','AI Engineer for Developers — Associate cert',
+ [23,28,'Prove it and get hired','AI Engineer for Developers — Associate cert',
   'Timed exam plus a practical project, included in your subscription. You get 30 days from the moment you register, so don\'t register until you\'re ready.<br><br>Then: badge on LinkedIn, three or four repos pinned on GitHub (JeJo8), one short post per shipped project, and five applications a week. Every week, not when you feel like it.',
   'https://www.datacamp.com/certification']
 ];
@@ -697,6 +882,8 @@ function todayItems(){
     it.push(['20:10','Treadmill · 30 min',t[2]]);
     it.push(['20:40','Cool-down · 3 min',GYM[SES].cool.join(' · ')]);
   }
+  if(DOW===1||DOW===2) it.push(['16:30','Build block · 2 hrs',
+    'Short-shift day. Slot this wherever your shift ends. Courses fit in an hour; shipping code does not — this is where the portfolio actually gets built.']);
   it.push(['21:45','Phone in the kitchen','Charging outside the bedroom. Book instead.']);
   it.push(['22:30','Lights out','Seven and a half hours. Short sleep is why good plans quietly stop working.']);
   return it.sort((a,b)=>a[0].localeCompare(b[0]));
@@ -839,7 +1026,7 @@ function drawFood(sel){
 /* ---- GYM ---- */
 let gOpen={};
 function drawGym(sel){
-  const ks=['A','B','C','D'];
+  const ks=['A','B','C','D','E'];
   const seg=document.getElementById('gseg');
   seg.innerHTML=ks.map(k=>`<button class="${k===sel?'on':''}" data-k="${k}">${k}${SESS[DOW]===k?' ·':''}</button>`).join('');
   seg.querySelectorAll('button').forEach(b=>b.onclick=()=>drawGym(b.dataset.k));
@@ -869,6 +1056,7 @@ function drawGym(sel){
         <div class="cv ${op?'op':''}">›</div>
       </div>
       <div class="det" ${op?'':'style="display:none"'} data-d="${k}">
+        ${animSVG(e.an)}
         <div class="dl"><span>Tempo</span><b>${e.tempo}</b></div>
         <div class="dl"><span>Rest between sets</span><b>${e.rest}</b></div>
         <div class="dl"><span>When you hit the top of the range</span><b>${e.inc}</b></div>
